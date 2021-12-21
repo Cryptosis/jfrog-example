@@ -2,7 +2,7 @@ resources:
   - name: jfrognexploit
     type: GitRepo
     configuration:
-      gitProvider: GitHub
+      gitProvider: liora2
       path: Cryptosis/jfrog-example
 
 pipelines:
@@ -12,7 +12,7 @@ pipelines:
         type: Bash
         configuration:
           integrations:
-            - name: Nexploit
+            - name: Liora
           inputResources:
             - name: jfrognexploit
         execution:
